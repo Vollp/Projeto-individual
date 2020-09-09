@@ -13,13 +13,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-    val diciplina = diciplina_texto.text.toString()
-    val nota01 = nota01_texto.text.toString().toDouble()
-    val nota02 = nota02_texto.text.toString().toDouble()
-    val media:Double = (nota01 + nota02) / 2
 
     fun calcular(componete:View) {
-        if (diciplina.length >= 10) {
+
+        val diciplina = diciplina_texto.text.toString()
+        val nota01 = nota01_texto.text.toString().toDouble()
+        val nota02 = nota02_texto.text.toString().toDouble()
+        val media:Double = (nota01 + nota02) / 2
+
+        if (diciplina.length <= 10) {
             if (nota01 > 0.0 && nota01 <= 10.0) {
                 if (nota02 > 0.0 && nota02 <= 10.0) {
                     if (media >= 6.0) {

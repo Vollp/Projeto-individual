@@ -43,7 +43,7 @@
         android:textSize="25sp"
         app:layout_constraintTop_toBottomOf="@+id/nota_01"
         android:id="@+id/nota01_texto"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         />
 
     <TextView
@@ -64,7 +64,7 @@
         android:textSize="25sp"
         app:layout_constraintTop_toBottomOf="@+id/nota_02"
         android:id="@+id/nota02_texto"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         />
 
     <Button
@@ -74,6 +74,7 @@
         android:textSize="25sp"
         android:id="@+id/bt_01"
         app:layout_constraintTop_toBottomOf="@id/nota02_texto"
+        android:onClick="calcular"
         />
 
     <TextView
