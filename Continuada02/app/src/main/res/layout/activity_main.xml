@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D7ED4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_titulo"
+        style="@style/textoInicial"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/tv_inicio"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_cadastro"
+        style="@style/textoPadrao"
+        android:textSize="35sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/tv_cadastro"
+        app:layout_constraintTop_toBottomOf="@+id/tv_inicio"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cadastro">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_nickName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:inputType="text"
+        android:layout_marginTop="25dp"
+        android:layout_margin="25dp"
+        android:padding="15dp"
+        android:background="#EEE"
+        android:id="@+id/et_nomeDeUsuario"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_nome"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:inputType="text"
+        android:layout_marginTop="25dp"
+        android:layout_margin="25dp"
+        android:padding="15dp"
+        android:background="#EEE"
+        android:id="@+id/et_nome"
+        app:layout_constraintTop_toBottomOf="@+id/et_nomeDeUsuario"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_sobre_nome"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:inputType="text"
+        android:layout_marginTop="25dp"
+        android:layout_margin="25dp"
+        android:padding="15dp"
+        android:background="#EEE"
+        android:id="@+id/et_sobreNome"
+        app:layout_constraintTop_toBottomOf="@+id/et_nome"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:inputType="text"
+        android:layout_marginTop="25dp"
+        android:layout_margin="25dp"
+        android:padding="15dp"
+        android:background="#EEE"
+        android:id="@+id/et_email"
+        app:layout_constraintTop_toBottomOf="@+id/et_sobreNome"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_idade"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:inputType="number"
+        android:layout_marginTop="25dp"
+        android:layout_margin="25dp"
+        android:padding="15dp"
+        android:background="#EEE"
+        android:id="@+id/et_idade"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_cadastrar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="35dp"
+        android:layout_margin="25dp"
+        android:padding="15dp"
+        android:background="#000000"
+        android:textColor="#EEEEEE"
+        android:id="@+id/bt_cadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/et_idade"
+        android:onClick="cadastrar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textoIdade"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/tv_alerta"
+        app:layout_constraintTop_toBottomOf="@+id/bt_cadastrar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Continuada02</string>
+    <string name="tv_titulo">Quero Minha Vaga</string>
+    <string name="tv_cadastro">Cadastro</string>
+    <string name="et_nickName">Nome de usuário</string>
+    <string name="et_nome">Nome</string>
+    <string name="et_sobre_nome">Sobre Nome</string>
+    <string name="et_email">Email</string>
+    <string name="et_idade">Idade</string>
+    <string name="bt_cadastrar">Cadastrar</string>
+    <string name="tv_bemVindo">Bem Vindo</string>
+    <string name="tv_texto_tela_vagas">Estás são as vagas disponíveis!</string>
+    <string name="txt_vagas">Empresa: %1$s
+                             Cargo: %2$s
+                             Número de Vagas: %3%d
+                             Endereço: %4$s
+                             Remuneração salarial: %5$.2f</string>
+    <string name="texto_idadeInvalida">Desculpe! Somente vagas para CLT</string>
+</resources>
