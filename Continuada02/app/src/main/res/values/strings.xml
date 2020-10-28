@@ -10,10 +10,11 @@
     <string name="bt_cadastrar">Cadastrar</string>
     <string name="tv_bemVindo">Bem Vindo</string>
     <string name="tv_texto_tela_vagas">Estás são as vagas disponíveis!</string>
-    <string name="txt_vagas">Empresa: %1$s
-                             Cargo: %2$s
-                             Número de Vagas: %3%d
-                             Endereço: %4$s
-                             Remuneração salarial: %5$.2f</string>
+    <string name="txt_vagas">Empresa: %1$s%n
+                             Cargo: %2$s%n
+                             Número de Vagas: %3$d%n
+                             Endereço: %4$s%n
+                             Remuneração salarial: %5$.2f%n</string>
     <string name="texto_idadeInvalida">Desculpe! Somente vagas para CLT</string>
+    <string name="texto_campoVazio">Preencha todos os campos</string>
 </resources>

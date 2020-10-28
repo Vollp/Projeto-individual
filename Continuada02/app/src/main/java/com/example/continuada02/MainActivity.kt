@@ -14,14 +14,30 @@ class MainActivity : AppCompatActivity() {
 
     fun cadastrar(componente: View) {
 
-        val idade = et_idade.text.toString().toDouble()
         val texto = getString(R.string.texto_idadeInvalida)
+        val campoVazio = getString(R.string.texto_campoVazio)
 
-        if (idade < 18) {
-            tv_alerta.text = texto
+        if (et_idade.text.trim().isEmpty()) {
+            tv_alerta.text = campoVazio
         }else {
-            val tela2 = Intent(this, Tela2::class.java)
-            startActivity(tela2)
+            val idade = et_idade.text.toString().toDouble()
+
+            if (et_nomeDeUsuario.text.trim().isEmpty()) {
+                tv_alerta.text = campoVazio
+            }else if (et_nome.text.trim().isEmpty()) {
+                tv_alerta.text = campoVazio
+            }else if (et_sobreNome.text.trim().isEmpty()) {
+                tv_alerta.text = campoVazio
+            }else if (et_email.text.trim().isEmpty()) {
+                tv_alerta.text = campoVazio
+            }else if (et_idade.text.trim().isEmpty()){
+                tv_alerta.text = campoVazio
+            }else if (idade < 18) {
+                tv_alerta.text = texto
+            }else {
+                val tela2 = Intent(this, Tela2::class.java)
+                startActivity(tela2)
+            }
         }
     }
 }
